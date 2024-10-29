@@ -1,29 +1,33 @@
 import { Grid } from "@/components/Grid";
+import { Hero } from "@/components/Hero";
 import { ImageHover } from "@/components/ImageHover";
 import { ParallaxTilt } from "@/components/ParallaxTilt";
 import { ScrollLine } from "@/components/ScrollLine";
+import { BackgroundBeams } from "@/components/BackgroundBeams";
 
 export default function Home() {
   return (
-    <main className="-mt-[5.859rem] mb-32 flex min-h-screen flex-col items-center overflow-hidden">
+    <main className="flex min-h-dvh flex-col items-center overflow-hidden pb-32">
+      <BackgroundBeams />
       <Grid>
+        <Hero />
+
         <ScrollLine
           className="relative col-span-12 grid grid-cols-6 gap-x-20 gap-y-32 sm:grid-cols-12"
-          left="left-[5.375rem]"
-          top="top-[3.25rem]"
+          left="left-[21.125rem]"
         >
           <div className="-mr-10 sm:col-start-5 sm:col-end-13">
             <ImageHover className="rounded-bl-xxl rounded-tl-xxl">
               <img
-                src="https://www.datocms-assets.com/53320/1704778138-page-7_elsewhere-in-india-avatars-2079-2023-digital-art-bhavani-kumar.jpg?auto=format&dpr=0.54&w=2972"
+                src="https://www.datocms-assets.com/98156/1719130161-3.png"
                 alt="test"
                 className="aspect-video h-[568px] w-full object-cover"
               />
             </ImageHover>
           </div>
-          <div className="-mt-[calc(1.375rem+8rem)] flex flex-col gap-9 sm:col-start-2 sm:col-end-7">
-            <div className="font-sans text-xs">Arts & Culture</div>
-            <h2 className="text-7xl">4A Centre for Contemporary Asian Art</h2>
+          <div className="-mt-[calc(1.375rem+8rem)] flex flex-col gap-9 sm:col-start-4 sm:col-end-13">
+            <div className="font-sans text-xs">Film & TV</div>
+            <h2 className="text-7xl">Haven't You Done Well Productions</h2>
           </div>
         </ScrollLine>
         <div className="sm:col-start-1 sm:col-end-7">
@@ -60,10 +64,10 @@ export default function Home() {
 
         <ScrollLine className="relative flex flex-col gap-1 sm:col-start-4 sm:col-end-11">
           <h2 className="text-4xl">
-            Ikkanei is an independent design&#8209;led development studio studio
-            based in Melbourne, Australia.
+            We thrive in the intersection of business, design and engineering;
+            informed by data, driven by empathy.
           </h2>
-          <div className="font-sans underline text-xs">Read more</div>
+          <div className="font-sans text-xs">Read more</div>
         </ScrollLine>
 
         <div className="-ml-10 sm:col-start-1 sm:col-end-12">

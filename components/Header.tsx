@@ -11,7 +11,7 @@ export function Header({
   mainMenu: LayoutQuery["mainMenu"];
 }) {
   return (
-    <header className="relative z-20 pt-12">
+    <header className="relative z-20 pt-6">
       <Grid>
         <div className="sm:col-start-2 sm:col-end-5">
           <Link
@@ -29,13 +29,13 @@ export function Header({
           </div>
         </div> */}
         {mainMenu && mainMenu.navigationItems?.length > 0 && (
-          <nav className="hidden sm:col-start-7 sm:col-end-13 sm:block">
-            <ul
+          <nav className="hidden items-center justify-end font-sans font-bold text-jurassic-park text-sm/4 sm:col-start-7 sm:col-end-13 sm:flex dark:text-frosting-cream">
+            Menu
+            {/* <ul
               role="navigation"
               className="flex h-full items-center justify-end gap-8 font-sans text-base"
             >
               {mainMenu.navigationItems.map((item) => {
-                console.log(item);
                 const external = item?.external;
                 return (
                   <li key={item.id}>
@@ -58,7 +58,7 @@ export function Header({
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
           </nav>
         )}
       </Grid>

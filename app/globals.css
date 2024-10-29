@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-gypsy-jewels: #643a5b;
+  --color-frosting-cream: #fffbee;
+  --color-jurassic-park: #3a6443;
+  --color-eerie-black: #1a1a1a;
+}

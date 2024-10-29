@@ -10,9 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "gypsy-jewels": "#643A5B",
-        "frosting-cream": "#fffbee",
-        "jurassic-park": "#3a6443",
+        "gypsy-jewels": "var(--color-gypsy-jewels)",
+        "frosting-cream": "var(--color-frosting-cream)",
+        "jurassic-park": "var(--color-jurassic-park)",
+        "eerie-black": "var(--color-eerie-black)",
       },
       fontFamily: {
         sans: ["var(--font-modern-era)", ...defaultTheme.fontFamily.sans],

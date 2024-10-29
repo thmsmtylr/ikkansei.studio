@@ -5,6 +5,7 @@ import { request } from "@/lib/datocms";
 import { Header } from "@/components/Header";
 import { LAYOUT_QUERY } from "@/queries/layout-query";
 import { LayoutQuery } from "@/types/generated";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
 const sans = localFont({
   src: "../public/modern-era-regular.ttf",
@@ -59,12 +60,14 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body
-        className={`${serif.variable} ${sans.variable} scroll-smooth bg-frosting-cream font-serif text-jurassic-park antialiased`}
-      >
-        <Header title={title} mainMenu={mainMenu} />
-        {children}
-      </body>
+      <SmoothScroll>
+        <body
+          className={`${serif.variable} ${sans.variable} dark:bg-eerie-black scroll-smooth bg-frosting-cream font-serif text-jurassic-park antialiased dark:text-frosting-cream`}
+        >
+          <Header title={title} mainMenu={mainMenu} />
+          {children}
+        </body>
+      </SmoothScroll>
     </html>
   );
 }

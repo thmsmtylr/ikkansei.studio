@@ -32,7 +32,7 @@ export function ScrollLine({
       <motion.div
         initial="hidden"
         whileInView="visible"
-        className={`absolute inset-y-0 ${left} ${top} w-px bg-jurassic-park`}
+        className={`absolute inset-y-0 ${left} ${top} w-px bg-jurassic-park dark:bg-frosting-cream`}
         style={{ scaleY, originY: 0 }}
       />
       {children}

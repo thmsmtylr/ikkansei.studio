@@ -1,13 +1,13 @@
 export function Logo({ title }: { title: string }) {
   return (
     <svg
-      width="170"
-      height="38"
+      width="100%"
+      height="18"
       viewBox="0 0 170 38"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       focusable="false"
-      className="text-jurassic-park"
+      className="text-jurassic-park dark:text-frosting-cream"
     >
       <text className="sr-only" fontSize="0">
         {title}

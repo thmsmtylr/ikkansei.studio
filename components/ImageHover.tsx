@@ -18,7 +18,7 @@ export function ImageHover({
     >
       <motion.div
         whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
       >
         {children}
       </motion.div>
