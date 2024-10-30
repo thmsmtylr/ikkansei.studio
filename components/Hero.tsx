@@ -5,7 +5,7 @@ import { metadata } from "@/app/layout";
 
 export function Hero() {
   return (
-    <div className="-mt-[49.75px] flex h-dvh flex-col items-start justify-center gap-3 sm:col-start-2 sm:col-end-13">
+    <div className="col-span-full -mt-[49.75px] flex h-dvh flex-col items-start justify-center gap-3 sm:col-start-2 sm:col-end-13">
       <h2>
         <span className="sr-only">{metadata.description}</span>
         <FlipWords
