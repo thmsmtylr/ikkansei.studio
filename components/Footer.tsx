@@ -11,15 +11,17 @@ export function Footer() {
         <div className="col-span-3 sm:col-span-6">
           <div className="flex justify-end">
             <a
-              href="#"
+              href="https://www.instagram.com/ikkanseistudio/profilecard/?igsh=cGNrb20wYmxtZGRi"
               className="inline-flex hover:underline hover:underline-offset-2"
+              target="_blank"
             >
               Instagram
             </a>
             <span className="mx-1">—</span>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/ikkansei"
               className="inline-flex hover:underline hover:underline-offset-2"
+              target="_blank"
             >
               LinkedIn
             </a>

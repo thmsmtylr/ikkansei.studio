@@ -28,8 +28,8 @@ export function Hero() {
             href={`tel:${encodeString("+61433991283")}`}
             className="inline-flex items-center justify-center overflow-visible rounded-full px-2 py-1.5 font-sans duration-500 text-xs/4 hover:bg-jurassic-park hover:text-frosting-cream dark:text-frosting-cream dark:hover:bg-frosting-cream dark:hover:text-black"
           >
-            +61-<b className="hidden">.hidden</b>433-991
-            <b className="hidden">.hidden</b>-283
+            +61 <b className="hidden">.hidden</b>433 991
+            <b className="hidden">.hidden</b> 283
           </a>
         </ParallaxTilt>
       </div>
