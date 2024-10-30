@@ -13,9 +13,13 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.10",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-parallax-tilt": "^1.7.249",
+    "tailwindcss-fluid-type": "^2.0.6"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.5",
@@ -27,6 +31,8 @@
     "eslint-config-next": "14.2.5",
     "eslint-plugin-next-on-pages": "^1.13.5",
     "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "vercel": "^37.13.0",

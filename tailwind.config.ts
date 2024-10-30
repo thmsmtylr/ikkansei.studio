@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config: Config = {
   content: [
@@ -8,13 +9,35 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "gypsy-jewels": "var(--color-gypsy-jewels)",
+        "frosting-cream": "var(--color-frosting-cream)",
+        "jurassic-park": "var(--color-jurassic-park)",
+        "eerie-black": "var(--color-eerie-black)",
+      },
+      fontFamily: {
+        sans: ["var(--font-modern-era)", ...defaultTheme.fontFamily.sans],
+        serif: [
+          "var(--font-domaine-display)",
+          ...defaultTheme.fontFamily.serif,
+        ],
+      },
+      borderRadius: {
+        xxl: "2rem",
+      },
+      spacing: {
+        "5.5": "1.375rem",
       },
     },
   },
-  plugins: [],
+  corePlugins: { fontSize: false },
+  plugins: [
+    require("tailwindcss-fluid-type")({
+      values: {
+        xxs: [-3, 1.6],
+      },
+    }),
+  ],
 };
+
 export default config;
